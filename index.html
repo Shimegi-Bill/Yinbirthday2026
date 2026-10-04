@@ -644,15 +644,19 @@ const SCRIPT2=[
  {who:B,text:'一百八。好。好得很。',face:'smug',fx:'zoom'},
  {who:B,text:'我收購咗半個地球，你係第一個夠膽令我心跳失控嘅人。',face:'stern'},
  {who:B,text:'……我耳仔紅？冷氣問題。唔准再望。',face:'tsun',fx:'shake'},
- {who:B,text:'成間公司我都管得住，就係管唔住你。',face:'cool'},{who:B,text:'所以我決定：連你都一齊管埋。',face:'smug',fx:'sparkle'},
  {who:B,text:'好。我宣佈：你通過！',face:'stern',fx:'zoom'},
  {who:B,text:'份獎勵太貴重，要簽收。',face:'cool'},
+ {who:B,text:'聽住。今日你唔使諗、唔使做、唔使郁。',face:'stern'},
+ {who:B,text:'我要你過一個全世界最躺平嘅生日。',face:'smug',fx:'zoom'},
  {choice:[
-   {label:'我要睇清楚先',reply:[{who:'燕燕',text:'我要睇清楚先。'},{who:B,text:'睇。每一條都係我親手寫，寫咗三晚。',face:'soft'}]},
-   {label:'唔簽得唔得？',reply:[{who:'燕燕',text:'唔簽得唔得？'},{who:B,text:'唔得。',face:'stern',fx:'shake'},{who:B,text:'……簽咗，你就係贏家。',face:'wink'}]}
+   {label:'我要睇清楚先',reply:[{who:'燕燕',text:'我要睇清楚先。'},{who:B,text:'睇。不過唔准坐直，攤住睇。',face:'stern'}]},
+   {label:'唔簽得唔得？',reply:[{who:'燕燕',text:'唔簽得唔得？'},{who:B,text:'唔簽？咁今日啲碗你洗。',face:'smug',fx:'shake'},{who:B,text:'仲有地拖埋。',face:'stern'}]}
  ]},
- {who:B,text:'簽完之後，你就正式成為——',face:'cool',fx:'zoom'},
- {who:B,text:'霸總的情人！',face:'wink',fx:'sparkle'}
+ {who:B,text:'秘書！拎支筆嚟！',face:'stern',fx:'zoom'},
+ {who:'秘書',text:'總裁……支筆喺你手度。',face:'shocked'},
+ {who:B,text:'……我知。測試你咋。',face:'tsun',fx:'shake'},
+ {who:B,text:'快啲簽。簽完我仲要去開會，決定今晚食咩。',face:'smug'},
+ {who:B,text:'簽！',face:'stern',fx:'zoom'}
 ];
 let queue=[],onDone=null,typing=false,typeTimer=null,fullText='',choiceOpen=false;
 function play(steps,done){queue=steps.slice();onDone=done;next()}
